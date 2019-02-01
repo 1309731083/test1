@@ -10,6 +10,6 @@ class TestController extends Controller
 {
     public function index(){
 //        return Carbon::now()->startOfDay()->toDateTimeString();
-        return 123;
+        return 1233;
     }
 }
