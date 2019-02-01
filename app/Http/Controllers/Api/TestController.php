@@ -9,6 +9,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 class TestController extends Controller
 {
     public function index(){
-        return Carbon::now()->startOfDay()->toDateTimeString();
+//        return Carbon::now()->startOfDay()->toDateTimeString();
+        return 123;
     }
 }
