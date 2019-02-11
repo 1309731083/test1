@@ -10,6 +10,6 @@ class TestController extends Controller
 {
     public function index(){
 //        return Carbon::now()->startOfDay()->toDateTimeString();
-        return '天晴了';
+        return '先大后小，思路为先，实验为辅。';
     }
 }
