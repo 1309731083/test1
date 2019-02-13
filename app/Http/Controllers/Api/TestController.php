@@ -17,6 +17,7 @@ class TestController extends Controller
         $query = DB::getQueryLog();
         var_dump($query);
 //        return Carbon::now()->startOfDay()->toDateTimeString();
-        return '先大后小，思路为先，实验为辅。';
+//        return '先大后小，思路为先，实验为辅。';
+        return $user->id;
     }
 }
