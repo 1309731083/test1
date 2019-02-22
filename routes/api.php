@@ -23,6 +23,7 @@ $api->version('v1', [
     $api->post('refresh', 'AuthController@refresh');
     $api->post('me', 'AuthController@me');
 
+    $api->get('/', 'Api\TestController@index');
     $api->get('test', 'Api\TestController@index');
 
     $api->group(['middleware' => 'auth:api'], function ($api) {
