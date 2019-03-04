@@ -20,4 +20,8 @@ class TestController extends Controller
 //        return '先大后小，思路为先，实验为辅。';
         return $user->id;
     }
+
+    public function info(){
+        return phpinfo();
+    }
 }
