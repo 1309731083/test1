@@ -25,6 +25,7 @@ $api->version('v1', [
 
     $api->get('/', 'Api\TestController@index');
     $api->get('test', 'Api\TestController@index');
+    $api->get('test/info', 'Api\TestController@info');
 
     $api->group(['middleware' => 'auth:api'], function ($api) {
         // 论坛
