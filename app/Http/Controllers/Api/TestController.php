@@ -11,6 +11,14 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 class TestController extends Controller
 {
     public function index(){
+        return User::find(1);
+        $res = $res2 = '╰❥ 燕? ࿐✰';
+        $content = preg_replace_callback('/./u',
+            function (array $match) {
+                return strlen($match[0]) >= 4 ? '' : $match[0];
+            },
+            $res);
+        echo $res2."\n".$content;exit;
         //打印sql
         DB::enableQueryLog();
         $user = User::find(1);
